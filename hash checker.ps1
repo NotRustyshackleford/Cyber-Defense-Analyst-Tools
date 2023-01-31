@@ -1,0 +1,1 @@
+﻿ Get-ChildItem -Path "C:\somefolder" | Foreach-Object { C:\ProgramData\chocolatey\bin\sigcheck.exe -h $_.FullName } | sigcheck -nobanner -h -v -vt > C:\somehashes\complete_hashes.txt
